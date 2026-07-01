@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-ai-module
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:your-api-key-here}
+      model: gpt-4o
+
+server:
+  port: 8081

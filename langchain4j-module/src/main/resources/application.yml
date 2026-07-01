@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: langchain4j-module
+
+langchain4j:
+  open-ai:
+    api-key: ${OPENAI_API_KEY:your-api-key-here}
+    model-name: gpt-4o
+
+server:
+  port: 8082
