@@ -2,9 +2,31 @@ spring:
   application:
     name: spring-ai-module
   ai:
+    dashscope:
+      embedding:
+        options:
+          model: text-embedding-v4
+          dimensions: 768
     openai:
       api-key: ${OPENAI_API_KEY:your-api-key-here}
       model: gpt-4o
+    vectorstore:
+      milvus:
+        # Milvus 服务地址
+        host: ${MILVUS_HOST:localhost}
+        port: ${MILVUS_PORT:19530}
+        # 数据库名称（Milvus 默认数据库）
+        database-name: ${MILVUS_DATABASE:default}
+        # 集合名称（向量存储的 Collection）
+        collection-name: ${MILVUS_COLLECTION:documents}
+        # 向量维度（需与 Embedding 模型输出维度一致）
+        dimension: 768
+        # 索引类型：IVF_FLAT（平衡型）、IVF_SQ8（压缩型）、HNSW（高性能型）
+        index-type: IVF_FLAT
+        # IVF_FLAT 索引的聚类数
+        nlist: 1024
+        # 相似度度量：COSINE（余弦）、L2（欧氏距离）、IP（内积）
+        metric-type: COSINE
 
 server:
   port: 8081

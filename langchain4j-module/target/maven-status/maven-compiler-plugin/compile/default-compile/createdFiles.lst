@@ -1,1 +1,3 @@
 com\study\ai\langchain4j\Langchain4jApplication.class
+com\study\ai\langchain4j\splitter\RecursiveCharacterTextSplitter.class
+com\study\ai\langchain4j\controller\SplitController.class

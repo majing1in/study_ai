@@ -28,6 +28,18 @@
             <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
         </dependency>
 
+        <!-- Spring AI Tika Document Reader (支持 PDF/Word/Text 等多种格式) -->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-tika-document-reader</artifactId>
+        </dependency>
+
+        <!-- Spring AI Milvus Vector Store -->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-milvus-store-spring-boot-starter</artifactId>
+        </dependency>
+
         <!-- Spring Boot Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
