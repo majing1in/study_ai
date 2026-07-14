@@ -13,7 +13,7 @@ spring:
     vectorstore:
       milvus:
         # Milvus 服务地址
-        host: ${MILVUS_HOST:localhost}
+        host: ${MILVUS_HOST:42.193.21.179}
         port: ${MILVUS_PORT:19530}
         # 数据库名称（Milvus 默认数据库）
         database-name: ${MILVUS_DATABASE:default}
